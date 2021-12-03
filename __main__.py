@@ -2,9 +2,8 @@ from modules.functions import Function
 
 if __name__ == "__main__":   
 
-    print("teste 1")
     while True:
-        print("teste 2")
+        
         print("[1] - Cadastrar multiplos clientes", "[2] - Cadastrar Cliente Individual", "[3] - Buscar Cliente por CPF", "[4] - Buscar Lista de clientes cadastrados", "[5] - Atualizar dados de cliente", "[6] - Excluir cadastro", "[0] - Fechar", sep = "\n")
         menu = input("Opção: ")
 
