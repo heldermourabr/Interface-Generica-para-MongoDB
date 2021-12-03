@@ -1,7 +1,7 @@
-from modules.conetor_mongo import Conexao
+from modules.conector_mongo import Conexao
 from modules.item import Item
 
-class Functions:    
+class Function:    
 
     while True:
         def cadastrar_clientes():
@@ -48,7 +48,7 @@ class Functions:
             teste = Conexao()
             try:
                 clientes = []
-                item_details = teste.colection.find()
+                item_details = teste.collection.find()
                 for cliente in item_details:
                     nome = cliente['nome']
                     cpf = cliente['cpf']
@@ -73,7 +73,7 @@ class Functions:
                             cpf = input("Informe o novo cpf: ")
                             filtro = { 'nome': str(nome) }
                             novo_cpf = { "$set": { 'cpf': str(cpf) } }
-                            teste.collectionupdate_one(filtro, novo_cpf)
+                            teste.collection.update_one(filtro, novo_cpf)
                             print("Alteração cadastrada com Sucesso!")
                             break
             

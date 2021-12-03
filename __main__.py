@@ -1,29 +1,30 @@
-from modules.conetor_mongo import Conexao
-from modules.functions import Functions
+from modules.functions import Function
 
-if __name__ == "__main__":
-        
+if __name__ == "__main__":   
+
+    print("teste 1")
     while True:
+        print("teste 2")
         print("[1] - Cadastrar multiplos clientes", "[2] - Cadastrar Cliente Individual", "[3] - Buscar Cliente por CPF", "[4] - Buscar Lista de clientes cadastrados", "[5] - Atualizar dados de cliente", "[6] - Excluir cadastro", "[0] - Fechar", sep = "\n")
         menu = input("Opção: ")
 
         if menu == "1":
-            Functions.cadastrar_clientes()
+            Function.cadastrar_clientes()
         
         elif menu == "2":
-            Functions.cadastrar_cliente()
+            Function.cadastrar_cliente()
         
         elif menu == "3":
-            Functions.buscar_cliente()
+            Function.buscar_cliente()
         
         elif menu == "4":
-            Functions.buscar_clientes()
+            Function.buscar_clientes()
         
         elif menu == "5":
-            Functions.atualizar_cliente()
+            Function.atualizar_cliente()
         
         elif menu == "6":
-            Functions.excluir_cliente()
+            Function.excluir_cliente()
         
         elif menu == "0":
             break
