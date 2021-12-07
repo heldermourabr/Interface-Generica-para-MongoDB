@@ -16,3 +16,4 @@ class Conexao:
 
     def set_collection(self, collection):
         self.collection = self.database[collection]
+        
